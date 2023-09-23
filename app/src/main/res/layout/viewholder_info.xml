@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="260dp"
+    android:background="@drawable/info_background"
+    android:elevation="3dp">
+
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="300dp"
+        android:layout_height="175dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/fast_1" />
+
+    <TextView
+        android:id="@+id/tiltle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="More Info"
+        android:textSize="18dp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pic" />
+
+    <TextView
+        android:id="@+id/voteno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="576"
+        android:textColor="#ffffff"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tiltle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tiltle"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/upvote"
+        android:layout_width="20dp"
+        android:layout_height="9dp"
+        android:background="#282836"
+        app:layout_constraintBottom_toTopOf="@+id/voteno"
+        app:layout_constraintEnd_toEndOf="@+id/voteno"
+        app:layout_constraintStart_toStartOf="@+id/voteno"
+        app:srcCompat="@drawable/upvote"
+        tools:layout_height="24dp"
+        tools:layout_width="24dp" />
+
+    <ImageView
+        android:id="@+id/downvote"
+        android:layout_width="20dp"
+        android:layout_height="9dp"
+        android:background="#282836"
+        app:layout_constraintEnd_toEndOf="@+id/voteno"
+        app:layout_constraintStart_toStartOf="@+id/voteno"
+        app:layout_constraintTop_toBottomOf="@+id/voteno"
+        app:srcCompat="@drawable/downvote"
+        tools:layout_height="24dp"
+        tools:layout_width="24dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
